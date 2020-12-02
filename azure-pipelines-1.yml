@@ -36,6 +36,6 @@ steps:
     azureSubscription: 'Project Pack MSLS-964 (e6361d6e-e67e-4290-9496-e2578e9e6e33)'
     appType: 'webAppLinux'
     WebAppName: 'bopapi'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.jar'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/target/*.jar'
     RuntimeStack: 'TOMCAT|8.5-jre8'
     StartupCommand: 'java -jar /home/site/wwwroot/*.jar'
